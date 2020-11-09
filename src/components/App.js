@@ -24,9 +24,9 @@ const App = () => {
   }
 
 
-  const onVideoSelect = (video) => {
-    setSelectedVideo(video);
-  }
+  // const onVideoSelect = (video) => {
+  //   setSelectedVideo(video);
+  // }
 
 
   return (
@@ -41,7 +41,9 @@ const App = () => {
           <div className="five wide column">
             <VideoList
               videos={videos}
-              onVideoSelect={onVideoSelect}
+              onVideoSelect={setSelectedVideo}
+            // onVideoSelect = {(video)=> setSelectedVideo(video)}
+            //onVideoSelect={onVideoSelect}
             />
           </div>
         </div>
